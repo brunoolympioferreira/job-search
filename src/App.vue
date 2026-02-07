@@ -1,11 +1,3 @@
-<script setup></script>
-
 <template>
-  <h1>You did it! Hello</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <h1>Hello Vue</h1>
 </template>
-
-<style scoped></style>
