@@ -10,11 +10,14 @@ export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
-    tailwindcss()
+    tailwindcss(),
   ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  test: {
+    globals: true,
+  }
 })
