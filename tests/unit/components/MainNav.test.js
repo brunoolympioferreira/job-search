@@ -8,4 +8,15 @@ describe('MainNav', () => {
     const companyName = screen.getByText('Bobo Careers');
     expect(companyName).toBeInTheDocument();
   });
+
+  it('displays manu items for navigation', () => {
+    render(MainNav);
+    const navigationMenuItens = screen.getAllByRole('listitem');
+    const navigationMenuTexts = navigationMenuItens.map(
+      (item) => item.textContent
+    );
+    expect(navigationMenuTexts).toEqual([
+      'Teams', 'Locations', 'Life at Bobo Corp', 'How we hire', 'Students', 'Jobs',
+    ]);
+  });
 });
