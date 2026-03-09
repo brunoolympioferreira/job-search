@@ -1,2 +1,0 @@
-npm run dev -> rodar localhost
-npm run test:unit -> rodar testes
