@@ -6,8 +6,15 @@ import MainNav from "@/components/Navigation/MainNav.vue";
 
 describe("MainNav", () => {
   const renderMainNav = () => {
+    const $route = {
+      name: "Home",
+    };
+
     render(MainNav, {
       global: {
+        mocks: {
+          $route,
+        },
         stubs: {
           FontAwesomeIcon: true,
           RouterLink: RouterLinkStub,
@@ -26,7 +33,7 @@ describe("MainNav", () => {
     renderMainNav();
     const navigationMenuItems = screen.getAllByRole("listitem");
     const navigationMenuTexts = navigationMenuItems.map(
-      (item) => item.textContent,
+      (item) => item.textContent
     );
     expect(navigationMenuTexts).toEqual([
       "Teams",

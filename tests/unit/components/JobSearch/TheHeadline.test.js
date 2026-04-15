@@ -48,6 +48,7 @@ describe("TheHeadline", () => {
 
     const { unmount } = render(TheHeadline);
     unmount();
+
     expect(clearInterval).toHaveBeenCalled();
     vi.unstubAllGlobals();
   });
