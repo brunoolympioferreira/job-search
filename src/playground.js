@@ -1,7 +1,14 @@
-const favoriteFood = "sushi";
+const axios = require("axios");
+// const fetchJobsV1 = () => {
+//   axios
+//     .get("http://localhost:3000/jobs")
+//     .then((response) => console.log(response.data));
+// };
 
-const goodFoods = {
-  [favoriteFood]: true,
+const fetchJobsV2 = async () => {
+  const response = await axios.get("http://localhost:3000/jobs");
+  console.log(response.data);
 };
 
-console.log(goodFoods);
+//fetchJobsV1();
+fetchJobsV2();
