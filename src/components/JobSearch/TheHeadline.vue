@@ -11,7 +11,9 @@
 
 <script>
 import nextElementInList from "@/utils/nextElementInList";
+
 export default {
+  name: "TheHeadline",
   data() {
     return {
       action: "Build",
@@ -46,12 +48,15 @@ export default {
 .build {
   color: #1a73e8;
 }
+
 .create {
   color: #34a853;
 }
+
 .design {
   color: #f9ab00;
 }
+
 .code {
   color: #d93025;
 }

@@ -37,7 +37,7 @@ button {
 }
 
 .primary {
-  @apply rounded  bg-brand-blue-1 text-white hover:shadow-blue;
+  @apply rounded bg-brand-blue-1 text-white hover:shadow-blue;
 }
 
 .secondary {
