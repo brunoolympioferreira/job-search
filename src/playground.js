@@ -1,14 +1,11 @@
-const axios = require("axios");
-// const fetchJobsV1 = () => {
-//   axios
-//     .get("http://localhost:3000/jobs")
-//     .then((response) => console.log(response.data));
-// };
+const numbers = [1, 2, 2, 3, 4, 2, 5];
 
-const fetchJobsV2 = async () => {
-  const response = await axios.get("http://localhost:3000/jobs");
-  console.log(response.data);
-};
+console.log(numbers.filter((value) => value > 2));
 
-//fetchJobsV1();
-fetchJobsV2();
+const jobs = [
+  { title: "Angular Developer", organization: "Microsoft" },
+  { title: "Programmer", organization: "Google" },
+  { title: "Developer", organization: "Microsoft" },
+];
+
+console.log(jobs.filter((job) => job.organization === "Microsoft"));
